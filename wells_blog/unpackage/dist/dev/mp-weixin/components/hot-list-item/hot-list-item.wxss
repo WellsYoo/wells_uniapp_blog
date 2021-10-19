@@ -64,6 +64,7 @@
 .item-container .item-box .item-box-right .item-bottom-box .hot-box .hot-icon.data-v-6d3c310a {
   width: 20px;
   height: 20px;
+  vertical-align: top;
 }
 .item-container .item-box .item-box-right .item-bottom-box .hot-box .hot-text.data-v-6d3c310a {
   margin-left: 5px;

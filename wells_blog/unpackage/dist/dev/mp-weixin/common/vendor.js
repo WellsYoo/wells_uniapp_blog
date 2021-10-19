@@ -8670,23 +8670,78 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 12 */,
-/* 13 */,
+/* 12 */
+/*!*************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/styles/global.scss ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
+
+/***/ }),
+/* 13 */
+/*!***********************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/filters/index.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.hotNumber = hotNumber; // 1. 导入dayjs
+// import dayjs from 'dayjs';
+// // 2. dayjs 默认语言是英文，我们这里配置为中文
+// import 'dayjs/locale/zh-cn';
+// // 3. 引入 relativeTime
+// import rTime from 'dayjs/plugin/relativeTime';
+
+// // 4. 加载中文语言包
+// dayjs.locale('zh-cn');
+// // 5. 加载相对时间插件
+// dayjs.extend(rTime);
+
+/**
+ * 6. 定义过滤器，通过 dayjs().to(dayjs(val)) 方法把【当前时间】处理为【相对时间】
+ */
+// export function relativeTime(val) {
+//   return dayjs().to(dayjs(val));
+// }
+
+/**
+ * 将字符转化为以千为单位的字符
+ * @param {*} val 待转换字符
+ * @returns
+ */
+function hotNumber(val) {
+  var num = parseInt(val);
+  if (num < 1000) return val;
+
+  // 将 val 转为字符串
+  val = val + '';
+  // 获取以 千 为单位的值
+  return val.substring(0, val.length - 3) + 'k';
+}
+
+/***/ }),
 /* 14 */,
 /* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */
+/* 18 */,
+/* 19 */,
+/* 20 */
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 19);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 21);
 
 /***/ }),
-/* 19 */
+/* 21 */
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -8717,7 +8772,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 20);
+module.exports = __webpack_require__(/*! ./runtime */ 22);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -8733,7 +8788,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 20 */
+/* 22 */
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -9464,7 +9519,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 21 */
+/* 23 */
 /*!*****************************************************************************************!*\
   !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/api/hot.js ***!
   \*****************************************************************************************/
@@ -9472,7 +9527,7 @@ if (hadRuntime) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getHotTabs = getHotTabs;exports.getHotListFromTabType = getHotListFromTabType;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getHotTabs = getHotTabs;exports.getHotListFromTabType = getHotListFromTabType;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 function getHotTabs() {
   return (0, _request.default)({
@@ -9493,7 +9548,7 @@ function getHotListFromTabType(type) {
 }
 
 /***/ }),
-/* 22 */
+/* 24 */
 /*!***********************************************************************************************!*\
   !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/utils/request.js ***!
   \***********************************************************************************************/
@@ -9538,6 +9593,175 @@ function request(_ref) {var url = _ref.url,data = _ref.data,method = _ref.method
 
 request;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 59));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 60));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 61));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+{
+  en: _en.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default };exports.default = _default;
+
+/***/ }),
+/* 59 */
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json ***!
+  \**********************************************************************************************************************************************/
+/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"Pull up to show more\",\"uni-load-more.contentrefresh\":\"loading...\",\"uni-load-more.contentnomore\":\"No more data\"}");
+
+/***/ }),
+/* 60 */
+/*!***************************************************************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json ***!
+  \***************************************************************************************************************************************************/
+/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉显示更多\",\"uni-load-more.contentrefresh\":\"正在加载...\",\"uni-load-more.contentnomore\":\"没有更多数据了\"}");
+
+/***/ }),
+/* 61 */
+/*!***************************************************************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json ***!
+  \***************************************************************************************************************************************************/
+/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉顯示更多\",\"uni-load-more.contentrefresh\":\"正在加載...\",\"uni-load-more.contentnomore\":\"沒有更多數據了\"}");
+
+/***/ }),
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */
+/*!************************************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/static/images sync ^\.\/ranking\-.*\.png$ ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./ranking-1.png": 77,
+	"./ranking-2.png": 78,
+	"./ranking-3.png": 79,
+	"./ranking-other.png": 80
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 76;
+
+/***/ }),
+/* 77 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/static/images/ranking-1.png ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAwUlEQVQ4T2NkoBJgBJnzMyiugek/oz2pZv5j/H+Qfd2iBpA+sEH/QxO1/vz5N5WBkcGBaMP+MxxgYWHKZlw9/xrcIBDjd2D8flINYl2/0BFmMdhFowahxsN/hgOjYUQgaY6GESiAnv5n+N/J+I/pMgMjgxcD4/9SlFAjJowYGRhn/v79t5Nz8+L78LwYFG/H8J+hgoGRwRMshtOgoIQdDAz/uRn//+9kWb9oC644+xUUl8XEwFjOwMCwg2XdwnSYOgCbsYQTv+rcCgAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 78 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/static/images/ranking-2.png ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAwElEQVQ4T+2SPQrCcAzFX/wWb+Id2uqoxxBqQWfRsWsP4FAVT+HgprbeQHB18hC29P+klQoKxRYcmymE5JfwXgR/Cok5D1e3pUKjKJNKTk3Ls+O5BMSt1g0jLAHp5YfxWK9iKiP/+gbFSbDWDkVBDdPvp4uTi0rQlw88lhr9es1SIwJ3kg6FlxqqQ4KzT9XyaES4kcBpm94tHQ43uq4UFiIYvGoZoHCt7ynsKEWnNT7vsjwLVsYEwjmAfcP0rLTvCeyKihMbFdy9AAAAAElFTkSuQmCC"
+
+/***/ }),
+/* 79 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/static/images/ranking-3.png ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAwklEQVQ4T2NkoBJgBJkTM/13AyMzoz2pZv7/+//gkkzWBpA+sEHRM/5rMTH9ncrwn8GBaMMYGQ78+8ecvTSD8RrcIBAjdtaf/aQatDiNxRFmMdhFowahxgMjw4HRMCKQNEfDCBRATxn//+v895/xMgMTkxcjw/9SlFAjJoz+MzDMZGT63bk4lfM+THP8jP92fxn/VjAyMHiCxXAaNOPPDgZGBm5GRobORWksW3DFWdyMv1n/GRnKGRj+71iczpIOUwcApDKEE0Zu4qcAAAAASUVORK5CYII="
+
+/***/ }),
+/* 80 */
+/*!**************************************************************************************************************!*\
+  !*** /Users/wellsye/Documents/HBuilderProjects/wells_uniapp_blog/wells_blog/static/images/ranking-other.png ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAuElEQVQ4T2NkoBJgBJnz/PnzBkZGRntSzfz///9BSUnJBpA+sEFv377V+v3791QGBgYHEgw7wMrKmi0sLHwNbhCI8eLFi/2kGiQhIeEIsxjsolGD0OPhwGgYEUyao2HEwPCUgYGh8////5eZmJi8/v//X4oWakSF0UyQIRISEvdhml+9emX39+/fCkZGRk+oGHaDXr58uYOBgYH7////IAO24Iqz58+fZzEyMpYzMDDskJCQSIepAwCLWHYTWKTTjwAAAABJRU5ErkJggg=="
 
 /***/ })
 ]]);
